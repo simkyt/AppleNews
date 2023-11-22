@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  AppleNews
 //
-//  Created by Simonas Kytra on 22/11/2023.
+//  Created by arturs.olekss on 17/11/2023.
 //
 
 import UIKit
