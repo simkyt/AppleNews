@@ -15,7 +15,7 @@ class NewsFeedController: UITableViewController {
     private var currentApi = NetworkManager.popularApi
     private var sortPickerView: UIPickerView!
     private let sortOptions = ["Newest", "Oldest"]
-    private var currentSortOption = -1
+    private var currentSortOption = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,10 +79,6 @@ class NewsFeedController: UITableViewController {
     }
 
     private func handleSortSelection(at index: Int) {
-        if currentSortOption == index {
-            return
-        }
-        
         self.currentSortOption = index
         let dateFormatter = ISO8601DateFormatter()
 
